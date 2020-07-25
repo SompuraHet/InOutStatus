@@ -50,7 +50,8 @@ namespace InOutStatus.Controllers
         {
             if (ModelState.IsValid)
             {
-                userStatus.Comment = "Fixed Comment";
+                userStatus.UpdatedAt = DateTime.Now;
+
                 db.UserStatuses.Add(userStatus);
                 db.SaveChanges();
                 return RedirectToAction("Index");
@@ -83,6 +84,7 @@ namespace InOutStatus.Controllers
         {
             if (ModelState.IsValid)
             {
+                userStatus.UpdatedAt = DateTime.Now;
                 db.Entry(userStatus).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");

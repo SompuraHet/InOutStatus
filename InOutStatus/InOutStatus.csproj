@@ -390,6 +390,18 @@
     <Compile Include="Migrations\202007251857467_TableUserStatus.Designer.cs">
       <DependentUpon>202007251857467_TableUserStatus.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202007251924588_UpdateAt.cs" />
+    <Compile Include="Migrations\202007251924588_UpdateAt.Designer.cs">
+      <DependentUpon>202007251924588_UpdateAt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202007251926155_UpdateAtTime.cs" />
+    <Compile Include="Migrations\202007251926155_UpdateAtTime.Designer.cs">
+      <DependentUpon>202007251926155_UpdateAtTime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202007251929115_FKUserId.cs" />
+    <Compile Include="Migrations\202007251929115_FKUserId.Designer.cs">
+      <DependentUpon>202007251929115_FKUserId.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\UserStatus.cs" />
@@ -423,6 +435,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202007251857467_TableUserStatus.resx">
       <DependentUpon>202007251857467_TableUserStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202007251924588_UpdateAt.resx">
+      <DependentUpon>202007251924588_UpdateAt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202007251926155_UpdateAtTime.resx">
+      <DependentUpon>202007251926155_UpdateAtTime.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202007251929115_FKUserId.resx">
+      <DependentUpon>202007251929115_FKUserId.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
