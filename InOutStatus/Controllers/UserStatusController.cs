@@ -17,7 +17,7 @@ namespace InOutStatus.Controllers
         // GET: UserStatus
         public ActionResult Index()
         {
-            return View(db.UserStatuses.ToList());
+            return View(db.UserStatuses.OrderByDescending(s => s.UpdatedAt).ToList());
         }
 
         // GET: UserStatus/Details/5
@@ -51,7 +51,7 @@ namespace InOutStatus.Controllers
             if (ModelState.IsValid)
             {
                 userStatus.UpdatedAt = DateTime.Now;
-
+                userStatus.User_Id = "0b6f330d-74ad-451a-86c4-669653dec644";
                 db.UserStatuses.Add(userStatus);
                 db.SaveChanges();
                 return RedirectToAction("Index");
