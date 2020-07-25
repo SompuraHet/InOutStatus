@@ -50,6 +50,7 @@ namespace InOutStatus.Controllers
         {
             if (ModelState.IsValid)
             {
+                userStatus.Comment = "Fixed Comment";
                 db.UserStatuses.Add(userStatus);
                 db.SaveChanges();
                 return RedirectToAction("Index");
