@@ -38,6 +38,9 @@ namespace InOutStatus.Models
         {
             return new ApplicationDbContext();
         }
+
+        public System.Data.Entity.DbSet<InOutStatus.Models.UserStatus> UserStatuses { get; set; }
+
     }
 }
 

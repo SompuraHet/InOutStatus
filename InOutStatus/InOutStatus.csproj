@@ -239,6 +239,13 @@
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
     <Content Include="Views\web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\UserStatus\Create.cshtml" />
+    <Content Include="Views\UserStatus\Delete.cshtml" />
+    <Content Include="Views\UserStatus\Details.cshtml" />
+    <Content Include="Views\UserStatus\Edit.cshtml" />
+    <Content Include="Views\UserStatus\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Account\AddPhoneNumber.aspx.cs">
@@ -364,6 +371,7 @@
     <Compile Include="Contact.aspx.designer.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Controllers\UserStatusController.cs" />
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -377,6 +385,10 @@
     <Compile Include="Migrations\202007251842268_Inital.cs" />
     <Compile Include="Migrations\202007251842268_Inital.Designer.cs">
       <DependentUpon>202007251842268_Inital.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202007251857467_TableUserStatus.cs" />
+    <Compile Include="Migrations\202007251857467_TableUserStatus.Designer.cs">
+      <DependentUpon>202007251857467_TableUserStatus.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\IdentityModels.cs" />
@@ -393,7 +405,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Controllers\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -409,6 +420,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202007251842268_Inital.resx">
       <DependentUpon>202007251842268_Inital.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202007251857467_TableUserStatus.resx">
+      <DependentUpon>202007251857467_TableUserStatus.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
